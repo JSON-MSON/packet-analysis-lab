@@ -1,0 +1,42 @@
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-07-28 17:40 -0400
+Nmap scan report for 192.168.81.130
+Host is up (0.00076s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE   VERSION
+22/tcp  open  ssh       OpenSSH 10.2p1 Ubuntu 2ubuntu3.5 (Ubuntu Linux; protocol 2.0)
+443/tcp open  ssl/https
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port443-TCP:V=7.99%T=SSL%I=7%D=7/28%Time=6A69222A%P=aarch64-unknown-lin
+SF:ux-gnu%r(GetRequest,15D,"HTTP/1\.1\x20302\x20Found\r\nlocation:\x20/app
+SF:/login\?\r\nosd-name:\x20ubuntu-target\r\nx-frame-options:\x20sameorigi
+SF:n\r\ncache-control:\x20private,\x20no-cache,\x20no-store,\x20must-reval
+SF:idate\r\nset-cookie:\x20security_authentication=;\x20Max-Age=0;\x20Expi
+SF:res=Thu,\x2001\x20Jan\x201970\x2000:00:00\x20GMT;\x20Secure;\x20HttpOnl
+SF:y;\x20Path=/\r\ncontent-length:\x200\r\nDate:\x20Tue,\x2028\x20Jul\x202
+SF:026\x2021:42:02\x20GMT\r\nConnection:\x20close\r\n\r\n")%r(HTTPOptions,
+SF:144,"HTTP/1\.1\x20404\x20Not\x20Found\r\nosd-name:\x20ubuntu-target\r\n
+SF:x-frame-options:\x20sameorigin\r\ncontent-type:\x20application/json;\x2
+SF:0charset=utf-8\r\ncache-control:\x20private,\x20no-cache,\x20no-store,\
+SF:x20must-revalidate\r\ncontent-length:\x2060\r\nDate:\x20Tue,\x2028\x20J
+SF:ul\x202026\x2021:42:02\x20GMT\r\nConnection:\x20close\r\n\r\n{\"statusC
+SF:ode\":404,\"error\":\"Not\x20Found\",\"message\":\"Not\x20Found\"}")%r(
+SF:FourOhFourRequest,1CA,"HTTP/1\.1\x20401\x20Unauthorized\r\nosd-name:\x2
+SF:0ubuntu-target\r\nx-frame-options:\x20sameorigin\r\ncontent-type:\x20ap
+SF:plication/json;\x20charset=utf-8\r\ncache-control:\x20private,\x20no-ca
+SF:che,\x20no-store,\x20must-revalidate\r\nset-cookie:\x20security_authent
+SF:ication=;\x20Max-Age=0;\x20Expires=Thu,\x2001\x20Jan\x201970\x2000:00:0
+SF:0\x20GMT;\x20Secure;\x20HttpOnly;\x20Path=/\r\ncontent-length:\x2077\r\
+SF:nDate:\x20Tue,\x2028\x20Jul\x202026\x2021:42:02\x20GMT\r\nConnection:\x
+SF:20close\r\n\r\n{\"statusCode\":401,\"error\":\"Unauthorized\",\"message
+SF:\":\"Authentication\x20required\"}")%r(RTSPRequest,144,"HTTP/1\.1\x2040
+SF:4\x20Not\x20Found\r\nosd-name:\x20ubuntu-target\r\nx-frame-options:\x20
+SF:sameorigin\r\ncontent-type:\x20application/json;\x20charset=utf-8\r\nca
+SF:che-control:\x20private,\x20no-cache,\x20no-store,\x20must-revalidate\r
+SF:\ncontent-length:\x2060\r\nDate:\x20Tue,\x2028\x20Jul\x202026\x2021:42:
+SF:07\x20GMT\r\nConnection:\x20close\r\n\r\n{\"statusCode\":404,\"error\":
+SF:\"Not\x20Found\",\"message\":\"Not\x20Found\"}");
+MAC Address: 00:0C:29:0D:5D:FC (VMware)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 109.55 seconds
