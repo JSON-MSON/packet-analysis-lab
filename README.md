@@ -133,7 +133,7 @@ The difference isn't the network — it's entirely whether the application layer
 ## What I'd do differently in production
 
 - Automate this kind of encrypted-vs-unencrypted comparison as a recurring internal check rather than a one-off manual exercise, to catch cleartext services before they reach production.
-- Pair packet-level detection like this with a SIEM (see the [`siem-home-lab`](../siem-home-lab) project in this portfolio) so a real port scan or credential-exposure event triggers an automated alert instead of requiring someone to manually pull and filter a capture after the fact.
+- Pair packet-level detection like this with a SIEM (see the [`siem-home-lab`](https://github.com/JSON-MSON/siem-home-lab) project in this portfolio) so a real port scan or credential-exposure event triggers an automated alert instead of requiring someone to manually pull and filter a capture after the fact.
 
 ---
 
